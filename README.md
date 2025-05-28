@@ -24,14 +24,13 @@ pip install -r requirements.txt
 4 Crear un superusuario (opcional, para poder entrar al admin de Django)
 python manage.py createsuperuser
 
-5 (opcional)
+5 Ejecutar el servidor de desarrollo:
+python manage.py runserver
+
+6 (opcional)
 ingresar a http://127.0.0.1:8000/admin/ para ingresar al admin debe ulilizar las credenciales del paso 4
 
-7 Ejecutar el servidor de desarrollo: python manage.py runserver
-
-8 Acceder a la aplicación:
-
-9 Abrir el navegador y entrar a: http://127.0.0.1:8000
+7 Acceder a la aplicación: http://127.0.0.1:8000
 
 ### Decisiones Técnicas
 

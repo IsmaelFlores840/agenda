@@ -34,8 +34,8 @@ async function cargarContactos() {
   <td>${c.telefono}</td>
   <td>${c.provincia_detalle.nombre}</td>
   <td>
-    <button onclick="editarContacto(${c.id})">Editar</button>
-    <button onclick="eliminarContacto(${c.id})">Eliminar</button>
+    <button class = "btn btn-outline-primary" onclick="editarContacto(${c.id})"><i class="bi bi-pencil"></i> Editar</button>
+    <button class = "btn btn-outline-danger " onclick="eliminarContacto(${c.id})"><i class="bi bi-trash"></i> Eliminar</button>
   </td>
 `;
 
