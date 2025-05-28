@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input,select {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-with-icon {
+    background-color: #3498db;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px 12px 15px;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 9px;
+    font-size: 16px;
+    align-items: center;
+}

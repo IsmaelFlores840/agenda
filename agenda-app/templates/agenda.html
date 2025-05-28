@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de Contactos</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <h1>Agenda de Contactos</h1>
+
+    <form id="form-agenda">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" name="telefono" required />
+
+      <label for="provincia">Provincia:</label>
+      <select id="provincia" name="provincia" required></select>
+
+      <button type="submit" class="btn-with-icon">Agregar Contacto</button>
+      <button type="button" class="btn-with-icon" onclick="limpiarFormulario()">
+        Limpiar
+      </button>
+    </form>
+
+    <h2>Lista de Contactos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Teléfono</th>
+          <th>Provincia</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="agenda-body"></tbody>
+    </table>
+    <script src="{% static 'main.js' %}"></script>
+  </body>
+</html>
