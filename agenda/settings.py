@@ -12,12 +12,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
-######################### agregado por mi
 import os
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-######################### agregado por mi
-
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -35,12 +32,12 @@ SECRET_KEY = "django-insecure-_sv*2k!hz-!cgaer($wrx(1o8w$w)g_4%*js0mrg_r!t!!9v=o
 DEBUG = True
 
 ALLOWED_HOSTS = []
-######################### agregado por mi
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
-######################### agregado por mi
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -50,9 +47,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "rest_framework", #agregado por mi
-    'corsheaders', #agregado por mi
-    "agenda"  #agregado por mi
+    "rest_framework", 
+    'corsheaders', 
+    "agenda"  
 ]
 
 MIDDLEWARE = [
@@ -63,9 +60,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'corsheaders.middleware.CorsMiddleware', #agregado por mi
+    'corsheaders.middleware.CorsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = True  #agregado por  mi # Permite peticiones desde cualquier frontend
+CORS_ALLOW_ALL_ORIGINS = True 
 
 ROOT_URLCONF = "agenda.urls"
 
