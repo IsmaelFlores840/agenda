@@ -13,7 +13,6 @@ HTML5, CSS3, JavaScript
 
 1 Clonar el repositorio:
 git clone https://github.com/ismael840/agenda.git
-cd agenda
 
 2 Crear y activar un entorno virtual:
 python -m venv venv
@@ -22,19 +21,21 @@ venv\Scripts\activate
 3 Instalar las dependencias:
 pip install -r requirements.txt
 
-4 Aplicar migraciones:
-python manage.py migrate
-
-5 Crear un superusuario
+4 Crear un superusuario (opcional, para poder entrar al admin de Django)
 python manage.py createsuperuser
 
-6 Ejecutar el servidor de desarrollo: python manage.py runserver
+5 (opcional)
+ingresar a http://127.0.0.1:8000/admin/ para ingresar al admin debe ulilizar las credenciales del paso 4
 
-7 Acceder a la aplicación:
+7 Ejecutar el servidor de desarrollo: python manage.py runserver
 
-Abrir el navegador y entrar a: http://127.0.0.1:8000/crear-contacto/
+8 Acceder a la aplicación:
+
+9 Abrir el navegador y entrar a: http://127.0.0.1:8000
 
 ### Decisiones Técnicas
+
+comparto la base de datos para facidad del usuario (con los datos iniciales de las provincias)
 
 Separación de Archivos Estáticos: Los archivos CSS y JavaScript se colocaron en la carpeta static/ para mantener una estructura organizada y facilitar su gestión.
 
