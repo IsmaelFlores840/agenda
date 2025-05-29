@@ -3,8 +3,8 @@ const API_BASE = "http://localhost:8000/api";
 function limpiarFormulario() {
   document.getElementById("form-agenda").reset();
   contactoEnEdicion = null;
-  document.querySelector("button[type='submit']").textContent =
-    "Agregar Contacto";
+  document.querySelector("button[type='submit']").innerHTML =
+    '<i class="bi bi-plus-circle"></i> Agregar Contacto';
 }
 
 async function cargarProvincias() {
@@ -55,8 +55,8 @@ async function editarContacto(id) {
 
   contactoEnEdicion = id;
 
-  document.querySelector("button[type='submit']").textContent =
-    "Guardar Cambios";
+  document.querySelector("button[type='submit']").innerHTML =
+    '<i class="bi bi-floppy"></i> Guardar Cambios';
 }
 
 async function eliminarContacto(id) {
